@@ -1,0 +1,76 @@
+
+outdir: "L1_1isoline"
+alg: "1isoline_L1"
+log_freq: 1
+
+gaussian: 0
+improvement: 0
+iso_line: 1
+optimizing: 0
+random_direction: 0
+
+
+
+generations: 100
+solution_dimension: 1
+
+#   max_bound = exp_settings['solution_dimension'] / 2 * 5.12
+#   bounds = [(-max_bound, max_bound), (-max_bound, max_bound)]
+
+# Archive Settings
+
+
+gridTypeClass: 'GridArchive'
+gridDimensions: [10, 10]
+gridBounds: [[-100,100], [0, 100]]
+
+
+
+
+sigma0: 100
+
+# Gaussian
+gaussian_pop_size: 37
+
+ 
+
+# Iso-Line
+iso_sigma: 100
+line_sigma: 0.2
+isoline_pop_size: 37
+
+#Random Direction
+rd_selection_rule: filter
+rd_restart_rule: no_improvement
+rd_weight_rule: truncation
+rd_pop_size: 37
+
+# Improvement Emitter Settings
+imp_selection_rule: "filter"
+imp_restart_rule: "no_improvement"
+imp_weight_rule: "truncation"
+imp_pop_size: 37
+
+# Optimizing Emitter Settings
+opt_selection_rule: mu
+opt_restart_rule: basic
+opt_weight_rule: truncation
+opt_pop_size: 37
+
+
+
+#network args
+#action: 6
+#depth: 13
+
+
+
+    
+
+
+ 
+
+
+
+
+
